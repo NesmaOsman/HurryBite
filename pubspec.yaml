@@ -1,0 +1,234 @@
+name: design_project_homepage
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  cached_network_image: ^3.2.1
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.6
+  google_nav_bar: ^5.0.7
+  email_validator: ^3.0.0
+  flutter_pw_validator: ^1.6.0
+  smooth_page_indicator: ^1.2.0+3
+  lottie: ^3.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^3.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/screen2.1.png
+    - assets/screen3.2.png
+    - assets/loc.png
+    - assets/steak.png
+    - assets/shrimp.png
+    - assets/ham.png
+    - assets/seafood.png
+    - assets/sushi.png
+    - assets/burger.png
+    - assets/pasta.png
+    - assets/salad.png
+    - assets/chicken.png
+    - assets/pizza.png
+    - assets/tacos.png
+    - assets/cheesecake.png
+    - assets/cake.png
+    - assets/cupcake.png
+    - assets/brownie.png
+    - assets/gateau.png
+    - assets/ice cream.png
+    - assets/cookies.png
+    - assets/pudding.png
+    - assets/doughnut.png
+    - assets/juices.png
+    - assets/smoothies.png
+    - assets/cocktails.png
+    - assets/soft drinks.png
+    - assets/iced tea.png
+    - assets/iced coffee.png
+    - assets/hot tea.png
+    - assets/hot drinks.png
+    - assets/hot coffee.png
+    - assets/honey mustard chicken.png
+    - assets/piccata mushroom steak.png
+    - assets/spring rolls.png
+    - assets/onion rings.png
+    - assets/fries.png
+    - assets/chicken wings.png
+    - assets/fresh_meat_banner.png
+    - assets/margherita pizza.png
+    - assets/pepperoni pizza.png
+    - assets/vegetarian pizza.png
+    - assets/chicken ranch pizza.png
+    - assets/super beef pizza.png
+    - assets/frutti di mare pizza.png
+    - assets/cheeseburger.png
+    - assets/veggie burger.png
+    - assets/bbq burger.png
+    - assets/grilled chicken.png
+    - assets/fried chicken.png
+    - assets/spicy chicken.png
+    - assets/ribeye steak.png
+    - assets/filet mignon.png
+    - assets/sirloin steak.png
+    - assets/smoked ham.png
+    - assets/honey glazed ham.png
+    - assets/spicy ham.png
+    - assets/california roll.png
+    - assets/spicy tuna roll.png
+    - assets/salmon roll.png
+    - assets/Grilled Salmon.png
+    - assets/Shrimp Cocktail.png
+    - assets/Mixed Seafood Platter.png
+    - assets/alfredo pasta.png
+    - assets/pesto pasta.png
+    - assets/spaghetti bolognese.png
+    - assets/garlic shrimp.png
+    - assets/spicy shrimp.png
+    - assets/shrimp fried rice.png
+    - assets/buffalo wings.png
+    - assets/bbq wings.png
+    - assets/garlic parmesan wings.png
+    - assets/classic onion rings.png
+    - assets/beer battered onion rings.png
+    - assets/mozzarella onion rings.png
+    - assets/beef tacos.png
+    - assets/chicken tacos.png
+    - assets/veggie tacos.png
+    - assets/vegetable spring rolls.png
+    - assets/shrimp spring rolls.png
+    - assets/pork spring rolls.png
+    - assets/caesar salad.png
+    - assets/greek salad.png
+    - assets/garden salad.png
+    - assets/regular fries.png
+    - assets/sweet potato fries.png
+    - assets/loaded fries.png
+    - assets/vanilla ice cream.png
+    - assets/chocolate ice cream.png
+    - assets/strawberry ice cream.png
+    - assets/chocolate cake.png
+    - assets/vanilla cake.png
+    - assets/carrot cake.png
+    - assets/chocolate pudding.png
+    - assets/vanilla pudding.png
+    - assets/rice pudding.png
+    - assets/chocolate gateau.png
+    - assets/fruit gateau.png
+    - assets/vanilla gateau.png
+    - assets/chocolate cupcake.png
+    - assets/vanilla cupcake.png
+    - assets/red velvet cupcake.png
+    - assets/new york cheesecake.png
+    - assets/berry cheesecake.png
+    - assets/chocolate cheesecake.png
+    - assets/classic brownie.png
+    - assets/walnut brownie.png
+    - assets/peanut butter brownie.png
+    - assets/chocolate chip cookies.png
+    - assets/oatmeal raisin cookies.png
+    - assets/peanut butter cookies.png
+    - assets/glazed doughnut.png
+    - assets/chocolate doughnut.png
+    - assets/sprinkled doughnut.png
+    - assets/mojito.png
+    - assets/pina colada.png
+    - assets/margarita.png
+    - assets/cola.png
+    - assets/lemonade.png
+    - assets/sprite.png
+    - assets/peach iced tea.png
+    - assets/lemon iced tea.png
+    - assets/mint iced tea.png
+    - assets/orange juice.png
+    - assets/apple juice.png
+    - assets/carrot juice.png
+    - assets/berry smoothie.png
+    - assets/mango smoothie.png
+    - assets/green smoothie.png
+    - assets/iced latte.png
+    - assets/iced mocha.png
+    - assets/iced americano.png
+    - assets/green tea.png
+    - assets/black tea.png
+    - assets/herbal tea.png
+    - assets/espresso.png
+    - assets/americano.png
+    - assets/latte.png
+    - assets/hot chocolate.png
+    - assets/chai latte.png
+    - assets/cappuccino.png
+    - assets/splash_animation.json
+
+
+
+
+
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
