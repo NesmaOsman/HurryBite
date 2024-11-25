@@ -1,4 +1,4 @@
-# design_project_homepage
+# HCI_PROJECT
 
 A new Flutter project.
 
