@@ -298,11 +298,11 @@ class _FoodHomePageState extends State<FoodHomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              searchBar(),
-              const SizedBox(height: 16),
+             searchBar(),
+              SizedBox(height: 16),
               promotionalBanner(),
               sectionTitle("Main Course"),
-              foodList(appetizersItems),
+              foodList(mainCourseItems),
               sectionTitle("Desserts"),
               foodList(dessertsItems),
               sectionTitle("Cold Beverages"),
