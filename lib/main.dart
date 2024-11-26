@@ -9,6 +9,7 @@ import 'sign_up_screen.dart';
 import 'profile_page.dart';
 
 
+
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -76,7 +77,7 @@ class _FoodHomePageState extends State<FoodHomePage> {
   }
 
 
-  final List<FoodItem> mainCourseItems = [
+ final List<FoodItem> mainCourseItems = [
     FoodItem(
       name: 'Pizza',
       imageUrl: 'assets/pizza.png',
@@ -90,40 +91,16 @@ class _FoodHomePageState extends State<FoodHomePage> {
       price: 8.99,
     ),
     FoodItem(
-      name: 'Chicken',
-      imageUrl: 'assets/chicken.png',
-      description: 'Grilled chicken served with spices',
-      price: 10.99,
-    ),
-    FoodItem(
-      name: 'Steak',
+      name: 'Meat',
       imageUrl: 'assets/steak.png',
       description: 'Tender steak cooked to perfection',
       price: 15.99,
     ),
     FoodItem(
-      name: 'Ham',
-      imageUrl: 'assets/ham.png',
-      description: 'Smoked ham with a savory flavor',
-      price: 12.99,
-    ),
-    FoodItem(
-      name: 'Sushi',
-      imageUrl: 'assets/sushi.png',
-      description: 'Fresh sushi rolls with fish and vegetables',
-      price: 14.99,
-    ),
-    FoodItem(
-      name: 'Seafood',
-      imageUrl: 'assets/seafood.png',
-      description: 'A variety of fresh seafood',
-      price: 18.99,
-    ),
-    FoodItem(
-      name: 'Shrimp',
-      imageUrl: 'assets/shrimp.png',
-      description: 'Succulent shrimp cooked with herbs',
-      price: 13.99,
+      name: 'Chicken',
+      imageUrl: 'assets/chicken.png',
+      description: 'Grilled chicken served with spices',
+      price: 10.99,
     ),
     FoodItem(
       name: 'Pasta',
@@ -131,46 +108,15 @@ class _FoodHomePageState extends State<FoodHomePage> {
       description: 'Creamy pasta with a blend of sauces',
       price: 11.99,
     ),
-  ];
-
-  final List<FoodItem> appetizersItems = [
-    FoodItem(
-      name: 'Chicken Wings',
-      imageUrl: 'assets/chicken wings.png',
-      description: 'Crispy chicken wings tossed in sauce',
-      price: 7.99,
-    ),
-    FoodItem(
-      name: 'Onion Rings',
-      imageUrl: 'assets/onion rings.png',
-      description: 'Golden-fried onion rings',
-      price: 5.99,
-    ),
-    FoodItem(
-      name: 'Tacos',
-      imageUrl: 'assets/tacos.png',
-      description: 'Soft shell tacos filled with meat and toppings',
-      price: 6.99,
-    ),
-    FoodItem(
-      name: 'Spring Rolls',
-      imageUrl: 'assets/spring rolls.png',
-      description: 'Crispy spring rolls with dipping sauce',
-      price: 5.49,
-    ),
     FoodItem(
       name: 'Salad',
       imageUrl: 'assets/salad.png',
       description: 'Fresh garden salad with dressing',
       price: 4.99,
     ),
-    FoodItem(
-      name: 'Fries',
-      imageUrl: 'assets/fries.png',
-      description: 'Crispy french fries',
-      price: 3.99,
-    ),
   ];
+
+  
 
   final List<FoodItem> dessertsItems = [
     FoodItem(
@@ -289,20 +235,6 @@ class _FoodHomePageState extends State<FoodHomePage> {
     ),
   ];
 
-  final List<FoodItem> recommendedPlatesItems = [
-    FoodItem(
-      name: 'Honey Mustard Chicken',
-      imageUrl: 'assets/honey mustard chicken.png',
-      description: 'Tender chicken with a honey mustard glaze',
-      price: 12.99,
-    ),
-    FoodItem(
-      name: 'Piccata Mushroom Steak',
-      imageUrl: 'assets/piccata mushroom steak.png',
-      description: 'Steak with a savory mushroom sauce',
-      price: 14.99,
-    ),
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -370,8 +302,6 @@ class _FoodHomePageState extends State<FoodHomePage> {
               const SizedBox(height: 16),
               promotionalBanner(),
               sectionTitle("Main Course"),
-              foodList(mainCourseItems),
-              sectionTitle("Appetizers"),
               foodList(appetizersItems),
               sectionTitle("Desserts"),
               foodList(dessertsItems),
@@ -379,8 +309,7 @@ class _FoodHomePageState extends State<FoodHomePage> {
               foodList(coldBeveragesItems),
               sectionTitle("Hot Beverages"),
               foodList(hotBeveragesItems),
-              sectionTitle("Recommended Plates"),
-              foodList(recommendedPlatesItems),
+              
             ],
           ),
         ),
